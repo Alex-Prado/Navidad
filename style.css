@@ -15,7 +15,7 @@
   --primercolor: #da2535;
   --subprimercolor: #c42130;
 
-  --sizeh1: 2rem;
+  --sizeh1: 2.5rem;
   --sizeh2: 1.25rem;
   --sizeh3: 1.125rem;
   --sizeh4: 1.25rem;
@@ -31,6 +31,7 @@
   margin-left: 15px;
   position: relative;
   z-index: 100;
+  cursor: pointer;
 }
 .header {
   position: fixed;
@@ -48,14 +49,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 .link {
   display: flex;
 }
 .nav .logo {
   text-decoration: none;
-  color: #000;
+  color: var(--colortitutlo);
 
   font-weight: 600;
 }
@@ -73,6 +74,7 @@
   transition: 0.5s ease;
   transform-origin: 100%;
   opacity: 0;
+
   transition-delay: calc(0.3s * var(--i));
 }
 .nav-menu li.active {
@@ -87,15 +89,17 @@
   font-weight: 600;
 }
 .banner {
-  display: grid;
+  display: flex;
   height: 100vh;
   gap: 1.5rem;
-  grid-template-columns: repeat(12, 1fr);
+  /* grid-template-columns: repeat(12, 1fr); */
   align-items: center;
   justify-content: center;
+  /* background-color: peru; */
+  /* padding: 15px 20px; */
 }
 .banner__img {
-  grid-column: 6/13;
+  /* grid-column: 7/13; */
   order: 1;
 }
 .banner__img img {
@@ -106,6 +110,8 @@
 }
 .banner__dato h1 {
   margin-bottom: 15px;
+  font-size: var(--sizeh1);
+  font-weight: 700;
 }
 @media (max-width: 650px) {
   .link {
@@ -118,37 +124,44 @@
     right: 0;
     width: 100%;
   }
-  .banner__img {
-    grid-column: 3/11;
-    order: 0;
-    /* display: flex;
-    justify-content: center; */
+  .nav {
+    padding: 0 15px;
   }
-  /* .banner__img img {
-    max-width: 50%;
-  } */
-  .banner__dato {
-    grid-column: 3/11;
-    /* order: 0; */
-    /* display: flex;
-    justify-content: center; */
+  .banner {
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    height: 100%;
+  }
+  .banner__img {
+    order: 0;
+  }
+  .banner__img img {
+    max-width: 75%;
+  }
+  .banner__dato h1 {
+    font-size: 1.5rem;
   }
   .nav-menu li {
     top: -50px;
     border: 1px solid #ddd;
-    background: var(--primercolor);
+    background: #fff;
     width: 80%;
-    margin: 0 10%;
+    margin: 5px 10%;
+    padding: 10px 0;
     text-align: center;
+    border-radius: 10px;
   }
   .nav-menu li a {
+    color: var(--colortitutlo);
+  }
+  .nav-menu li:hover{
+    background: var(--subprimercolor);
+  }
+  .nav-menu li:hover a{
     color: #fff;
   }
   .nav-menu li.active {
     top: 0;
-    /* width: 100%; */
-    /* background: #333; */
-    margin: 0;
     text-align: center;
   }
 }
