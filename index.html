@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff" />
+    <title>NAVIDAD</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav tmn-container">
+        <a href="#" class="logo">Tienda Navidad</a>
+        <div class="nav-menu">
+          <div class="link">
+            <li style="--i: 1" class="lista"><a href="#">Inicio</a></li>
+            <li style="--i: 2" class="lista"><a href="#">Accesorios</a></li>
+            <li style="--i: 3" class="lista"><a href="#">Decoracion</a></li>
+            <li style="--i: 4" class="lista"><a href="#">Tienda</a></li>
+          </div>
+          <i
+            class="fa fa-bars botonToggle"
+            onclick="toggle();"
+            aria-hidden="true"
+          ></i>
+        </div>
+      </div>
+    </header>
+    <section class="banner tmn-container">
+      <div class="banner__img">
+        <img src="img/home.png" alt="" />
+      </div>
+      <div class="banner__dato">
+        <h1>Lorem ipsum dolor sit amet consectetur</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et velit
+          sequi neque illum? Aspernatur laboriosam aperiam quod atque distinctio
+          mollitia sunt ipsum quas.
+        </p>
+      </div>
+    </section>
+    <script>
+      const lista = document.querySelectorAll(".lista");
+      function toggle() {
+        lista.forEach((list) => {
+          list.classList.toggle("active");
+        });
+      }
+    </script>
+  </body>
+</html>
