@@ -71,7 +71,7 @@
   position: relative;
   border: 1px solid #ddd;
   background: #f9f9f9;
-  height: 400px;
+  height: 430px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -106,6 +106,9 @@
   left: 20px;
   position: relative;
   transition: 0.5s;
+}
+.img h2{
+  font-weight: 600;
 }
 /* .img:hover h2,
 .img:hover span,
@@ -194,7 +197,7 @@
   text-align: center;
   border-radius: 10px;
   padding: 10px 0;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
