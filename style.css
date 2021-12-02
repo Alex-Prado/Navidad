@@ -8,6 +8,7 @@
   box-sizing: border-box;
   user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
 }
 :root {
   --colorletra: #5b5757;
@@ -26,6 +27,7 @@
   max-width: 968px;
   width: calc(100% - 3rem);
   margin: auto;
+  padding-top: 2rem;
 }
 .content {
   width: 100%;
@@ -108,15 +110,6 @@
   transition: 0.5s;
   margin: 4px 0;
 }
-/* .img h2{
-  font-weight: 600;
-} */
-/* .img:hover h2,
-.img:hover span,
-.img:hover h3{
-  width: 100%;
-  left: 50%;
-} */
 
 .botonToggle {
   margin-left: 15px;
@@ -238,7 +231,6 @@
   }
   .banner {
     flex-direction: column;
-    /* height: 100%; */
   }
   .banner__img {
     order: 0;
@@ -279,5 +271,9 @@
   }
   .sgt {
     text-align: center;
+  }
+  .content {
+    width: 90%;
+    margin: auto;
   }
 }

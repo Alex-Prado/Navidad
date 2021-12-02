@@ -16,15 +16,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- --------------------------- -->
+    <!-- -------------NAV-------------- -->
+    <!-- --------------------------- -->
     <header class="header">
       <div class="nav">
         <a href="#" class="logo">Tienda Navidad</a>
         <div class="nav-menu">
           <div class="link">
-            <li style="--i: 1" class="lista"><a href="#">Inicio</a></li>
-            <li style="--i: 2" class="lista"><a href="#">Accesorios</a></li>
-            <li style="--i: 3" class="lista"><a href="#">Decoracion</a></li>
-            <li style="--i: 4" class="lista"><a href="#">Tienda</a></li>
+            <li style="--i: 1" class="lista" onclick="toggle();"><a href="#inicio">Inicio</a></li>
+            <li style="--i: 2" class="lista" onclick="toggle();"><a href="#nosotros">Nosotros</a></li>
+            <li style="--i: 3" class="lista" onclick="toggle();"><a href="#accesorios">Accesorios</a></li>
+            <li style="--i: 4" class="lista" onclick="toggle();"><a href="#contacto">Contactanos</a></li>
           </div>
           <i
             class="fa fa-bars botonToggle"
@@ -34,7 +37,10 @@
         </div>
       </div>
     </header>
-    <section class="banner tmn-container">
+    <!-- ------------------------------------------ -->
+    <!-- --------------BANNER---------------------------- -->
+    <!-- ------------------------------------------ -->
+    <section class="banner tmn-container" id="inicio">
       <div class="banner__img">
         <img src="img/home.png" alt="" />
       </div>
@@ -47,8 +53,10 @@
         <span class="btn">Visitar</span>
       </div>
     </section>
-
-    <section class="banner tmn-container">
+    <!-- ---------------------------------- -->
+    <!-- ---------------BANNER 2------------------- -->
+    <!-- ---------------------------------- -->
+    <section class="banner tmn-container" id="nosotros">
       <div class="banner__img next">
         <img src="img/shared.png" alt="" />
       </div>
@@ -60,7 +68,10 @@
         </p>
       </div>
     </section>
-    <section class="tmn-container">
+    <!-- ----------------------------------- -->
+    <!-- -------------PRODUCTOS---------------------- -->
+    <!-- ----------------------------------- -->
+    <section class="tmn-container" id="accesorios">
       <h1 class="title">Accesorios navideños para tu hogar</h1>
       <div class="content">
         <div class="img">
@@ -107,8 +118,10 @@
         </div>
       </div>
     </section>
-
-    <section class="tmn-container">
+<!-- ----------------------------------- -->
+    <!-- -------------FOOTER---------------------- -->
+    <!-- ----------------------------------- -->
+    <section class="tmn-container" id="contacto">
       <h1 class="title">Contactanos</h1>
       <div class="contenedor">
         <div class="card-footer">
