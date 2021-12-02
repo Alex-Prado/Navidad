@@ -24,10 +24,25 @@
         <a href="#" class="logo">Tienda Navidad</a>
         <div class="nav-menu">
           <div class="link">
-            <li style="--i: 1" class="lista" onclick="toggle();"><a href="#inicio">Inicio</a></li>
-            <li style="--i: 2" class="lista" onclick="toggle();"><a href="#nosotros">Nosotros</a></li>
-            <li style="--i: 3" class="lista" onclick="toggle();"><a href="#accesorios">Accesorios</a></li>
-            <li style="--i: 4" class="lista" onclick="toggle();"><a href="#contacto">Contactanos</a></li>
+            <li style="--i: 1" class="lista" onclick="toggle();">
+              <a class="redirect" name="inicio" href="javascript://">Inicio</a>
+              <!-- <a href="javascript://" class="ouvrir">Newsletter</a> -->
+            </li>
+            <li style="--i: 2" class="lista" onclick="toggle();">
+              <a class="redirect" name="nosotros" href="javascript://"
+                >Nosotros</a
+              >
+            </li>
+            <li style="--i: 3" class="lista" onclick="toggle();">
+              <a class="redirect" name="accesorios" href="javascript://"
+                >Accesorios</a
+              >
+            </li>
+            <li style="--i: 4" class="lista" onclick="toggle();">
+              <a class="redirect" name="contacto" href="javascript://"
+                >Contactanos</a
+              >
+            </li>
           </div>
           <i
             class="fa fa-bars botonToggle"
@@ -118,7 +133,7 @@
         </div>
       </div>
     </section>
-<!-- ----------------------------------- -->
+    <!-- ----------------------------------- -->
     <!-- -------------FOOTER---------------------- -->
     <!-- ----------------------------------- -->
     <section class="tmn-container" id="contacto">
@@ -170,14 +185,12 @@
         </div>
       </div>
     </section>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
 
-    <script>
-      const lista = document.querySelectorAll(".lista");
-      function toggle() {
-        lista.forEach((list) => {
-          list.classList.toggle("active");
-        });
-      }
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>

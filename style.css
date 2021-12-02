@@ -251,16 +251,23 @@
     background: #f9f9f9;
     width: 80%;
     margin: 5px 10%;
-    padding: 10px 0;
+    /* padding: 10px 0; */
     text-align: center;
     border-radius: 10px;
   }
+  /*  */
   .nav-menu li a {
     color: var(--colortitutlo);
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
   }
 
   .nav-menu li:hover a {
-    color: var(--subprimercolor);
+    background: var(--subprimercolor);
+    color: #fff;
   }
   .nav-menu li.active {
     top: 0;
