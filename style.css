@@ -99,17 +99,18 @@
   color: #7c7676;
   letter-spacing: 1px;
 }
-.img h2,
+/* .img h2, */
 .img span,
 .img h3 {
   width: 100%;
   left: 20px;
   position: relative;
   transition: 0.5s;
+  margin: 4px 0;
 }
-.img h2{
+/* .img h2{
   font-weight: 600;
-}
+} */
 /* .img:hover h2,
 .img:hover span,
 .img:hover h3{
