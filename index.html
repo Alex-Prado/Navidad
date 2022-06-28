@@ -21,6 +21,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="aos.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -63,10 +64,10 @@
     <!-- --------------BANNER---------------------------- -->
     <!-- ------------------------------------------ -->
     <section class="banner tmn-container" id="inicio">
-      <div class="banner__img">
+      <div class="banner__img" data-aos="fade-left">
         <img src="img/home.png" alt="" />
       </div>
-      <div class="banner__dato">
+      <div class="banner__dato" data-aos="fade-right">
         <h1>Visitanos esta Navidad</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
@@ -80,10 +81,10 @@
     <!-- ---------------BANNER 2------------------- -->
     <!-- ---------------------------------- -->
     <section class="banner tmn-container" id="nosotros">
-      <div class="banner__img next">
+      <div class="banner__img next" data-aos="fade-left">
         <img src="img/shared.png" alt="" />
       </div>
-      <div class="banner__dato sgt">
+      <div class="banner__dato sgt" data-aos="fade-right">
         <h1>Compartir es el mejor regalo</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos beatae
@@ -97,42 +98,42 @@
     <section class="tmn-container" id="accesorios">
       <h1 class="title">Accesorios navideños para tu hogar</h1>
       <div class="content">
-        <div class="img">
+        <div class="img" data-aos="fade-left">
           <img src="img/accessory1.png" alt="" />
           <h3 class="title-producto">Accesorio Navidad</h3>
           <span>Accesorio</span>
           <h3>$<small>45.00</small></h3>
           <i class="fa fa-heart button" aria-hidden="true"></i>
         </div>
-        <div class="img">
+        <div class="img" data-aos="fade-up">
           <img src="img/accessory2.png" alt="" />
           <h3 class="title-producto">Accesorio Navidad</h3>
           <span>Accesorio</span>
           <h3>$<small>45.00</small></h3>
           <i class="fa fa-heart button" aria-hidden="true"></i>
         </div>
-        <div class="img">
+        <div class="img" data-aos="fade-right">
           <img src="img/accessory3.png" alt="" />
           <h3 class="title-producto">Accesorio Navidad</h3>
           <span>Accesorio</span>
           <h3>$<small>45.00</small></h3>
           <i class="fa fa-heart button" aria-hidden="true"></i>
         </div>
-        <div class="img">
+        <div class="img" data-aos="fade-left">
           <img src="img/accessory4.png" alt="" />
           <h3 class="title-producto">Accesorio Navidad</h3>
           <span>Accesorio</span>
           <h3>$<small>45.00</small></h3>
           <i class="fa fa-heart button" aria-hidden="true"></i>
         </div>
-        <div class="img">
+        <div class="img" data-aos="fade-up">
           <img src="img/accessory5.png" alt="" />
           <h3 class="title-producto">Accesorio Navidad</h3>
           <span>Accesorio</span>
           <h3>$<small>45.00</small></h3>
           <i class="fa fa-heart button" aria-hidden="true"></i>
         </div>
-        <div class="img">
+        <div class="img" data-aos="fade-right">
           <img src="img/decoration1.png" alt="" />
           <h3 class="title-producto">Accesorio Navidad</h3>
           <span>Accesorio</span>
@@ -147,13 +148,13 @@
     <section class="tmn-container" id="contacto">
       <h1 class="title">Contactanos</h1>
       <div class="contenedor">
-        <div class="card-footer">
+        <div class="card-footer" data-aos="fade-left">
           <h1>Regalo de Navidad</h1>
 
           <p>Te envio un regalo en esta Navidad</p>
         </div>
 
-        <div class="card-footer">
+        <div class="card-footer" data-aos="fade-down">
           <h1>Contacto</h1>
           <p><i class="fa fa-phone" aria-hidden="true"></i>+123-456-7890</p>
           <p><i class="fa fa-phone" aria-hidden="true"></i>+111-222-3333</p>
@@ -165,14 +166,14 @@
             1234
           </p>
         </div>
-        <div class="card-footer">
+        <div class="card-footer" data-aos="fade-up">
           <h1>Nuestro Servicios</h1>
 
           <p>Precios</p>
           <p>Descuentos</p>
           <p>Modo de envio</p>
         </div>
-        <div class="card-footer">
+        <div class="card-footer" data-aos="fade-right">
           <h1>Social</h1>
           <p>
             <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -199,6 +200,13 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="aos.js"></script>
     <script src="main.js"></script>
+    <script>
+      AOS.init({
+        delay: 400,
+        duration: 800,
+      });
+    </script>
   </body>
 </html>
